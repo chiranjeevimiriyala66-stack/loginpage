@@ -7,9 +7,25 @@ color:white;
 
 
 }
+.moon{
+    height:20px;
+    width:20px;
+}
+.buttondark{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mood{
+    height:30px;
+    width:40px;
+    border:2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
 #container{
-    height: 100vh;
-    margin-top: 150px;
+    min-height: 100vh;
+    padding-top: 120px;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -19,23 +35,30 @@ color:white;
  
 header{
     top:0;
-    height: 120px;
+    height: auto;
     font-size: 18px;
     position:fixed;
     background-color: #181818;
     display: flex;
-    justify-content: space-evenly;
+    
+     justify-content: space-evenly; 
+     align-items: center;
     border:2px solid white;
     border-radius: 20px;
     width:100%;
 
     
 }
+.navlinks{
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
 p:hover{
     background-color: #3a3a3a;
 }
 .formenu{
-    position: absolute;
+    position: static;
     left:30px;
     top:30px;
     display: flex;
@@ -90,7 +113,11 @@ p{
     
 }
 .loginclass{
-    display: flex;
+     position: static;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    /* display: flex;
     justify-content: center;
     align-items: center;    
     position:absolute;
@@ -98,10 +125,12 @@ p{
         top: 17%;
         left: 34%;
         border: 2px solid white;
-        border-radius: 20px;
+        
         width:30%;
-        padding:10px 20px;
-        background-color: #2c2c2c;
+        padding:10px 20px;*/
+        background-color: #2c2c2c; 
+        border-radius: 20px;
+        font-size: 20px;
 }
 .companylogo:hover{
     
@@ -145,7 +174,7 @@ h2{
     margin-top:20px;
     
     
-    font-size: 60px;
+    font-size: 40px;
 }
 .companylogo{
     display: flex;
@@ -173,12 +202,12 @@ span:hover{
    
     color:white;
     /* text-align: center; */
-   font-size: 30px;
+   font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     
     margin-bottom: 40px;
-    height: 70px;
-    width: 80%;
+    height: 50px;
+    width: 90%;
     background-color: #303030;
     border:2px solid black;
     
@@ -189,9 +218,9 @@ span:hover{
    
     margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    height: 70px;
-    width: 80%;
+    font-size: 18px;
+    height: 50px;
+    width: 90%;
     background-color: #303030;
     border:2px solid black;
     
@@ -201,9 +230,9 @@ span:hover{
    
     margin-bottom: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    height: 70px;
-    width: 80%;
+    font-size: 18px;
+    height: 50px;
+    width: 90%;
     background-color:rgb(60, 60, 194);
     border-radius: 20px;
     cursor: pointer;
@@ -255,8 +284,35 @@ span:hover{
     
    
     background-color: #181818;
-    height: 70vh;
-    width: 30%;
+    min-height: 70vh;
+    width: 90%;
+    max-width:400px;
     border-radius: 20px;
     border:2px solid white;
+}
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        height: 50px;
+    }
+
+    .companylogo img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .social button {
+        height: 50px;
+    }
+
 }
